@@ -1,0 +1,13 @@
+ Carregar configuração
+ source /home/tiago/.profile
+
+
+
+ /home/tiago/.profile
+ export JAVA_HOME='/opt/jdk-11.0.2'
+ PATH="$JAVA_HOME/bin:$PATH"
+ export PATH;
+
+ export M2_HOME='/opt/apache-maven-3.9.3'
+ PATH="$M2_HOME/bin:$PATH"
+ export PATH;
