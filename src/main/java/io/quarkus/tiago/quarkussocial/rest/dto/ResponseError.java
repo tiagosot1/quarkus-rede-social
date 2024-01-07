@@ -2,12 +2,13 @@ package io.quarkus.tiago.quarkussocial.rest.dto;
 
 import jakarta.validation.ConstraintViolation;
 import jakarta.ws.rs.core.Response;
+import lombok.Data;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
+@Data
 public class ResponseError {
     public static final int UNPROCESSABLE_ENTITY_STATUS = 422;
     private  String message;
@@ -31,20 +32,5 @@ public class ResponseError {
     }
     public Response withStatusCode(int code){
         return Response.status(code).entity(this).build();
-    }
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public Collection<FieldError> getErrors() {
-        return errors;
-    }
-
-    public void setErrors(Collection<FieldError> errors) {
-        this.errors = errors;
     }
 }
