@@ -2,7 +2,6 @@
  source /home/tiago/.profile
 
 
-
  /home/tiago/.profile
  export JAVA_HOME='/opt/jdk-11.0.2'
  PATH="$JAVA_HOME/bin:$PATH"
@@ -11,3 +10,13 @@
  export M2_HOME='/opt/apache-maven-3.9.3'
  PATH="$M2_HOME/bin:$PATH"
  export PATH;
+
+
+
+Atualizar pom.xml
+Clique com o botão direito no arquivo pom.xml
+Maven -> Reload Project
+
+#https://github.com/cursodsousa/Quarkus-social
+Curso do projeto: https://www.udemy.com/course/aprenda-quarkus-e-desenvolva-apis-restful-poderosas-em-java/
+Configurar o java no linux: https://www.udemy.com/course/des-web-quarkus-basico/learn/lecture/18565126#overview
